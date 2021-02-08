@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script>
+    
+      var firebaseConfig = {
+        apiKey: "AIzaSyCYwjYccH6OD4haYh2zdlmC3dcxzK0U9qU",
+        authDomain: "chatting-b7945.firebaseapp.com",
+        projectId: "chatting-b7945",
+        storageBucket: "chatting-b7945.appspot.com",
+        messagingSenderId: "427668813645",
+        appId: "1:427668813645:web:4d0c097dc06636a4ac6904",
+        measurementId: "G-S0LTEY7B61"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Firebase -->
+</head>
+<body>
+    <div id="form">
+      
+        <div id="signin">
+        
+                <p class="h2">SIGN-UP</p>
+                <form>
+
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label  class="sr-only">First Name:</label>
+                        <input type="text" class="form-control" id="first_Name" placeholder="first name">
+                      </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                      <label  class="sr-only">Last Name:</label>
+                      <input type="text" class="form-control" id="last_Name" placeholder="last name">
+                    </div>
+                    <div class="form-group">
+                      <label >Email Address</label>
+                      <input type="email" class="form-control" id="sign_Up_Email" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label >Password</label>
+                      <input type="password" class="form-control" id="sign_Up_Password" placeholder="Password">
+                    </div>
+                  </form>
+                  <button type="submit" class="btn btn-primary" onclick="sign_Up_Fun()">Sign-Up</button>
+                  </div>
+                  <br/>
+        <div id="login">
+            <p class="h2">LOG-IN</p>
+            <form>
+                <div class="form-group">
+                    <label >Email Address</label>
+                    <input type="email" class="form-control" id="log_In_Email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label >Password</label>
+                    <input type="password" class="form-control" id="log_In_Password" placeholder="Password">
+                  </div>
+              
+              </form>
+              <button type="submit" class="btn btn-primary" id="log_In_Button" onclick="log_In_Fun()">Log-In</button>
+    </div>
+    </div>
+    
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./styles.css">
+<script src="./app.js" ></script>
+</html>

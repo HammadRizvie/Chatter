@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCYwjYccH6OD4haYh2zdlmC3dcxzK0U9qU",
+        authDomain: "chatting-b7945.firebaseapp.com",
+        projectId: "chatting-b7945",
+        storageBucket: "chatting-b7945.appspot.com",
+        messagingSenderId: "427668813645",
+        appId: "1:427668813645:web:4d0c097dc06636a4ac6904",
+        measurementId: "G-S0LTEY7B61"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid" id="heading_messageBox">
+          <span class="navbar-brand" id="heading_message" >MESSAGE BOX</span>
+          <button class="btn btn-outline-light" id="backBtn" onclick="messageBoxBack()" >BACK</button>
+          </div>
+      </nav>
+    <div id="messagePageMainDiv">
+        
+        <div id="innerBox">
+            <div id="messageBox">
+                <div id = "senderName">
+
+                </div>
+            </div>
+            <div id="inputBox">
+                <input type="text" class="form-control" id="inputText"  placeholder="Eneter your message"/>
+                <button class="btn btn-primary mb-2" id="sendButton" onclick="sendMessage()" >Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./styles.css">
+<script src="./app.js" ></script>
+</html>
